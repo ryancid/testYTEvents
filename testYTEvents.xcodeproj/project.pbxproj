@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE003A2F3CE85C65D0E0455 /* Pods_testYTEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E2ECB1471196D6B006E21E /* Pods_testYTEvents.framework */; };
 		9468CDEC22F8320100BAD0F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468CDEB22F8320100BAD0F3 /* AppDelegate.swift */; };
 		9468CDEE22F8320100BAD0F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468CDED22F8320100BAD0F3 /* ViewController.swift */; };
 		9468CDF122F8320100BAD0F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9468CDEF22F8320100BAD0F3 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21E2ECB1471196D6B006E21E /* Pods_testYTEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testYTEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8202BB20A1017AAB398B07CE /* Pods-testYTEvents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testYTEvents.release.xcconfig"; path = "Target Support Files/Pods-testYTEvents/Pods-testYTEvents.release.xcconfig"; sourceTree = "<group>"; };
 		9468CDE822F8320100BAD0F3 /* testYTEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testYTEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9468CDEB22F8320100BAD0F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9468CDED22F8320100BAD0F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9468CDF222F8320300BAD0F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9468CDF522F8320300BAD0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9468CDF722F8320300BAD0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9F8C3AEBA7BFD08B725CC4 /* Pods-testYTEvents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testYTEvents.debug.xcconfig"; path = "Target Support Files/Pods-testYTEvents/Pods-testYTEvents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE003A2F3CE85C65D0E0455 /* Pods_testYTEvents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71CBAF2EF8044D32E6772CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21E2ECB1471196D6B006E21E /* Pods_testYTEvents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9468CDDF22F8320100BAD0F3 = {
 			isa = PBXGroup;
 			children = (
 				9468CDEA22F8320100BAD0F3 /* testYTEvents */,
 				9468CDE922F8320100BAD0F3 /* Products */,
+				A935746A68F56520C0F8A636 /* Pods */,
+				71CBAF2EF8044D32E6772CEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = testYTEvents;
 			sourceTree = "<group>";
 		};
+		A935746A68F56520C0F8A636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA9F8C3AEBA7BFD08B725CC4 /* Pods-testYTEvents.debug.xcconfig */,
+				8202BB20A1017AAB398B07CE /* Pods-testYTEvents.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9468CDFA22F8320300BAD0F3 /* Build configuration list for PBXNativeTarget "testYTEvents" */;
 			buildPhases = (
+				044435D1300AC1DB2C8C13F6 /* [CP] Check Pods Manifest.lock */,
 				9468CDE422F8320100BAD0F3 /* Sources */,
 				9468CDE522F8320100BAD0F3 /* Frameworks */,
 				9468CDE622F8320100BAD0F3 /* Resources */,
+				5A2C6B8AC2A114644BBE88D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044435D1300AC1DB2C8C13F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testYTEvents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2C6B8AC2A114644BBE88D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testYTEvents/Pods-testYTEvents-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testYTEvents/Pods-testYTEvents-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testYTEvents/Pods-testYTEvents-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9468CDE422F8320100BAD0F3 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		9468CDFB22F8320300BAD0F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9F8C3AEBA7BFD08B725CC4 /* Pods-testYTEvents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		9468CDFC22F8320300BAD0F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8202BB20A1017AAB398B07CE /* Pods-testYTEvents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

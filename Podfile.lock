@@ -1,0 +1,22 @@
+PODS:
+  - YoutubePlayer-in-WKWebView (0.3.1)
+
+DEPENDENCIES:
+  - YoutubePlayer-in-WKWebView (from `https://github.com/ryancid/YoutubePlayer-in-WKWebView.git`, branch `onError`)
+
+EXTERNAL SOURCES:
+  YoutubePlayer-in-WKWebView:
+    :branch: onError
+    :git: https://github.com/ryancid/YoutubePlayer-in-WKWebView.git
+
+CHECKOUT OPTIONS:
+  YoutubePlayer-in-WKWebView:
+    :commit: e6673d57cfaf5eacd9250298f9c0963caee4b4c2
+    :git: https://github.com/ryancid/YoutubePlayer-in-WKWebView.git
+
+SPEC CHECKSUMS:
+  YoutubePlayer-in-WKWebView: 86f6b4c04797296071585b92724f3904d0273f12
+
+PODFILE CHECKSUM: 0e4fa3c1b4cd4a7de94ea419827ffcf27d7477fb
+
+COCOAPODS: 1.7.5
